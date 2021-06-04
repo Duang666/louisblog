@@ -1,0 +1,9 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev   #指定使用的yml文件
+  messages:
+    basename: i18n/messages
+
+comment.avatar: /images/avatar.png    #游客默认头像

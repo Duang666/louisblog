@@ -1,0 +1,650 @@
+2021-02-19 09:50:34.770  INFO 15820 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 15820 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 09:50:34.777  INFO 15820 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 09:50:34.828  INFO 15820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 09:50:34.828  INFO 15820 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 09:50:35.787  INFO 15820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 09:50:35.921  INFO 15820 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123 ms. Found 5 JPA repository interfaces.
+2021-02-19 09:50:36.902  INFO 15820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 09:50:36.912  INFO 15820 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 09:50:36.913  INFO 15820 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 09:50:37.036  INFO 15820 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 09:50:37.036  INFO 15820 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2207 ms
+2021-02-19 09:50:37.245  INFO 15820 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 09:50:37.307  INFO 15820 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 09:50:37.465  INFO 15820 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 09:50:37.627  INFO 15820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 09:50:38.580  INFO 15820 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 09:50:38.603  INFO 15820 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 09:50:39.486  INFO 15820 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 09:50:39.495  INFO 15820 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 09:50:39.561  INFO 15820 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 09:50:40.463  WARN 15820 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-19 09:50:40.619  INFO 15820 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-19 09:50:40.729  INFO 15820 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-19 09:50:41.303  INFO 15820 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-19 09:50:41.323  INFO 15820 --- [restartedMain] com.louisblogs.BlogApplication           : Started BlogApplication in 7.453 seconds (JVM running for 9.825)
+2021-02-19 09:53:13.915  INFO 15820 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-19 09:53:13.915  INFO 15820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-19 09:53:13.916  INFO 15820 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-19 09:53:15.889  INFO 15820 --- [http-nio-8080-exec-10] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-02-19 09:53:15.997  WARN 15820 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-19 09:53:16.008  WARN 15820 --- [http-nio-8080-exec-10] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-19 09:53:16.016  INFO 15820 --- [http-nio-8080-exec-10] com.louisblogs.aspect.LogAspect          : Result : index
+2021-02-19 09:53:19.108  INFO 15820 --- [http-nio-8080-exec-2] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/blog/1', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.blog', args=[1, {}]}
+2021-02-19 09:53:19.188  INFO 15820 --- [http-nio-8080-exec-2] com.louisblogs.aspect.LogAspect          : Result : blog
+2021-02-19 09:58:54.813  INFO 8636 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 8636 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 09:58:54.815  INFO 8636 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 09:58:54.853  INFO 8636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 09:58:54.853  INFO 8636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 09:58:55.540  INFO 8636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 09:58:55.641  INFO 8636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2021-02-19 09:58:56.395  INFO 8636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 09:58:56.402  INFO 8636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 09:58:56.403  INFO 8636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 09:58:56.521  INFO 8636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 09:58:56.521  INFO 8636 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1667 ms
+2021-02-19 09:58:56.695  INFO 8636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 09:58:56.737  INFO 8636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 09:58:56.850  INFO 8636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 09:58:56.945  INFO 8636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 09:58:57.671  INFO 8636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 09:58:57.692  INFO 8636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 09:58:58.432  INFO 8636 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 09:58:58.442  INFO 8636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 09:58:58.494  INFO 8636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 09:58:59.426  WARN 8636 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-19 09:58:59.603  INFO 8636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-19 09:58:59.709  INFO 8636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-19 09:59:00.261  INFO 8636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-19 09:59:00.271  INFO 8636 --- [restartedMain] com.louisblogs.BlogApplication           : Started BlogApplication in 5.984 seconds (JVM running for 7.75)
+2021-02-19 09:59:00.780  INFO 8636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-19 09:59:00.781  INFO 8636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-19 09:59:00.782  INFO 8636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-19 09:59:00.817  INFO 8636 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/blog/1', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.blog', args=[1, {}]}
+2021-02-19 09:59:00.981  INFO 8636 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Result : blog
+2021-02-19 10:04:59.993  INFO 7396 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 7396 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 10:04:59.995  INFO 7396 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 10:05:00.042  INFO 7396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 10:05:00.043  INFO 7396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 10:05:00.811  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 10:05:00.920  INFO 7396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99 ms. Found 5 JPA repository interfaces.
+2021-02-19 10:05:01.752  INFO 7396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 10:05:01.762  INFO 7396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 10:05:01.763  INFO 7396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 10:05:01.891  INFO 7396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 10:05:01.891  INFO 7396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1848 ms
+2021-02-19 10:05:02.073  INFO 7396 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 10:05:02.119  INFO 7396 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 10:05:02.234  INFO 7396 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 10:05:02.339  INFO 7396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 10:05:03.010  INFO 7396 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 10:05:03.031  INFO 7396 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 10:05:03.811  INFO 7396 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 10:05:03.819  INFO 7396 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 10:05:03.879  INFO 7396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 10:05:04.889  WARN 7396 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-19 10:05:05.075  INFO 7396 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-19 10:05:05.195  INFO 7396 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-19 10:05:05.839  INFO 7396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-19 10:05:05.848  INFO 7396 --- [restartedMain] com.louisblogs.BlogApplication           : Started BlogApplication in 6.387 seconds (JVM running for 8.449)
+2021-02-19 10:05:06.735  INFO 7396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-19 10:05:06.735  INFO 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-19 10:05:06.737  INFO 7396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-02-19 10:05:06.791  INFO 7396 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-02-19 10:05:06.893  WARN 7396 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-19 10:05:06.907  WARN 7396 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-19 10:05:06.915  INFO 7396 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Result : index
+2021-02-19 10:05:11.379  INFO 7396 --- [http-nio-8080-exec-2] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/blog/1', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.blog', args=[1, {}]}
+2021-02-19 10:05:11.488  INFO 7396 --- [http-nio-8080-exec-2] com.louisblogs.aspect.LogAspect          : Result : blog
+2021-02-19 10:44:02.429  INFO 10468 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 10468 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 10:44:02.431  INFO 10468 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 10:44:02.464  INFO 10468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 10:44:02.465  INFO 10468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 10:44:03.029  INFO 10468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 10:44:03.113  INFO 10468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+2021-02-19 10:44:03.771  INFO 10468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 10:44:03.778  INFO 10468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 10:44:03.779  INFO 10468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 10:44:03.886  INFO 10468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 10:44:03.887  INFO 10468 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1422 ms
+2021-02-19 10:44:04.074  INFO 10468 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 10:44:04.112  INFO 10468 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 10:44:04.216  INFO 10468 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 10:44:04.305  INFO 10468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 10:44:04.852  INFO 10468 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 10:44:04.868  INFO 10468 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 10:44:05.504  INFO 10468 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 10:44:05.512  INFO 10468 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 10:44:05.563  INFO 10468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 10:44:06.359  WARN 10468 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-19 10:44:06.506  INFO 10468 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-19 10:44:06.593  INFO 10468 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-19 10:44:07.091  INFO 10468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-19 10:44:07.098  INFO 10468 --- [restartedMain] com.louisblogs.BlogApplication           : Started BlogApplication in 5.087 seconds (JVM running for 6.223)
+2021-02-19 10:44:36.228  INFO 10468 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-19 10:44:36.229  INFO 10468 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-19 10:44:36.230  INFO 10468 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-19 10:45:45.797  INFO 7104 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 7104 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 10:45:45.799  INFO 7104 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 10:45:45.830  INFO 7104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 10:45:45.831  INFO 7104 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 10:45:46.369  INFO 7104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 10:45:46.452  INFO 7104 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 5 JPA repository interfaces.
+2021-02-19 10:45:47.057  INFO 7104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 10:45:47.064  INFO 7104 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 10:45:47.064  INFO 7104 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 10:45:47.167  INFO 7104 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 10:45:47.167  INFO 7104 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1336 ms
+2021-02-19 10:45:47.314  INFO 7104 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 10:45:47.354  INFO 7104 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 10:45:47.450  INFO 7104 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 10:45:47.534  INFO 7104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 10:45:48.072  INFO 7104 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 10:45:48.088  INFO 7104 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 10:45:48.694  INFO 7104 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 10:45:48.701  INFO 7104 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 10:45:48.747  INFO 7104 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 10:45:49.526  WARN 7104 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-19 10:45:49.672  INFO 7104 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-19 10:45:49.761  INFO 7104 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-19 10:45:50.253  INFO 7104 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-19 10:45:50.260  INFO 7104 --- [restartedMain] com.louisblogs.BlogApplication           : Started BlogApplication in 4.913 seconds (JVM running for 6.148)
+2021-02-19 10:45:58.313  INFO 7104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-19 10:45:58.314  INFO 7104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-19 10:45:58.315  INFO 7104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-19 10:45:58.349  INFO 7104 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/blog/1', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.blog', args=[1, {}]}
+2021-02-19 10:45:58.476  INFO 7104 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Result : blog
+2021-02-19 10:46:41.222  INFO 7104 --- [http-nio-8080-exec-6] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.post', args=[Comment{id=null, nickname='123', email='1233@qq.com', content='123', avatar='null', createTime=null}]}
+2021-02-19 10:46:41.601  INFO 7104 --- [http-nio-8080-exec-6] com.louisblogs.aspect.LogAspect          : Result : redirect:/comments/1
+2021-02-19 10:46:41.611  INFO 7104 --- [http-nio-8080-exec-9] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments/1', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.comments', args=[1, {}]}
+2021-02-19 10:46:41.638  INFO 7104 --- [http-nio-8080-exec-9] com.louisblogs.aspect.LogAspect          : Result : blog :: commentList
+2021-02-19 10:57:55.166  INFO 7104 --- [http-nio-8080-exec-3] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.post', args=[Comment{id=null, nickname='erew', email='1233@qq.com', content='ceshi', avatar='null', createTime=null}]}
+2021-02-19 10:57:55.174  INFO 7104 --- [http-nio-8080-exec-3] com.louisblogs.aspect.LogAspect          : Result : redirect:/comments/1
+2021-02-19 10:57:55.178  INFO 7104 --- [http-nio-8080-exec-6] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments/1', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.comments', args=[1, {}]}
+2021-02-19 10:57:55.182  INFO 7104 --- [http-nio-8080-exec-6] com.louisblogs.aspect.LogAspect          : Result : blog :: commentList
+2021-02-19 11:05:57.307  INFO 7104 --- [http-nio-8080-exec-5] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/blog/1', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.blog', args=[1, {}]}
+2021-02-19 11:05:57.318  INFO 7104 --- [http-nio-8080-exec-5] com.louisblogs.aspect.LogAspect          : Result : blog
+2021-02-19 11:06:14.767  INFO 7104 --- [http-nio-8080-exec-4] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/blog/1', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.blog', args=[1, {}]}
+2021-02-19 11:06:14.775  INFO 7104 --- [http-nio-8080-exec-4] com.louisblogs.aspect.LogAspect          : Result : blog
+2021-02-19 11:06:15.195  INFO 7104 --- [http-nio-8080-exec-9] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments/1', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.comments', args=[1, {}]}
+2021-02-19 11:06:15.199  INFO 7104 --- [http-nio-8080-exec-9] com.louisblogs.aspect.LogAspect          : Result : blog :: commentList
+2021-02-19 11:07:38.643  INFO 7104 --- [http-nio-8080-exec-4] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.post', args=[Comment{id=null, nickname='ifgyu', email='tufyy', content='fghc', avatar='null', createTime=null}]}
+2021-02-19 11:07:38.650  INFO 7104 --- [http-nio-8080-exec-4] com.louisblogs.aspect.LogAspect          : Result : redirect:/comments/1
+2021-02-19 11:07:38.653  INFO 7104 --- [http-nio-8080-exec-3] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments/1', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.comments', args=[1, {}]}
+2021-02-19 11:07:38.657  INFO 7104 --- [http-nio-8080-exec-3] com.louisblogs.aspect.LogAspect          : Result : blog :: commentList
+2021-02-19 11:08:14.504  INFO 7104 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.post', args=[Comment{id=null, nickname='h', email='h', content='ffyf
+', avatar='null', createTime=null}]}
+2021-02-19 11:08:14.513  INFO 7104 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Result : redirect:/comments/1
+2021-02-19 11:08:14.516  INFO 7104 --- [http-nio-8080-exec-10] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments/1', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.comments', args=[1, {}]}
+2021-02-19 11:08:14.521  INFO 7104 --- [http-nio-8080-exec-10] com.louisblogs.aspect.LogAspect          : Result : blog :: commentList
+2021-02-19 23:39:51.414  INFO 7932 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 7932 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 23:39:51.416  INFO 7932 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 23:39:51.459  INFO 7932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 23:39:51.459  INFO 7932 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 23:39:52.269  INFO 7932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 23:39:52.368  INFO 7932 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89 ms. Found 5 JPA repository interfaces.
+2021-02-19 23:39:53.256  INFO 7932 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 23:39:53.267  INFO 7932 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 23:39:53.268  INFO 7932 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 23:39:53.381  INFO 7932 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 23:39:53.381  INFO 7932 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1921 ms
+2021-02-19 23:39:53.660  INFO 7932 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 23:39:53.714  INFO 7932 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 23:39:53.877  INFO 7932 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 23:39:54.038  INFO 7932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 23:39:54.962  INFO 7932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 23:39:54.984  INFO 7932 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 23:39:55.845  INFO 7932 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 23:39:55.854  INFO 7932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 23:39:55.915  INFO 7932 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 23:39:56.660  WARN 7932 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commentServiceImpl': Unsatisfied dependency expressed through field 'commentRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentRepository' defined in com.louisblogs.dao.CommentRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort)! Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type NEGATING_SIMPLE_PROPERTY for property parentComment unbound.
+2021-02-19 23:39:56.660  INFO 7932 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 23:39:56.662  INFO 7932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-19 23:39:56.670  INFO 7932 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-19 23:39:56.671  INFO 7932 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-19 23:39:56.681  INFO 7932 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-19 23:39:56.865 ERROR 7932 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commentServiceImpl': Unsatisfied dependency expressed through field 'commentRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentRepository' defined in com.louisblogs.dao.CommentRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort)! Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type NEGATING_SIMPLE_PROPERTY for property parentComment unbound.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.louisblogs.BlogApplication.main(BlogApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentRepository' defined in com.louisblogs.dao.CommentRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort)! Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type NEGATING_SIMPLE_PROPERTY for property parentComment unbound.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort)! Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type NEGATING_SIMPLE_PROPERTY for property parentComment unbound.
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:218)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:100)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:93)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:95)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:85)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:85)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:303)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$6(RepositoryFactoryBeanSupport.java:326)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalStateException: Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentCommentNot(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type NEGATING_SIMPLE_PROPERTY for property parentComment unbound.
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.throwExceptionOnArgumentMismatch(PartTreeJpaQuery.java:161)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.validate(PartTreeJpaQuery.java:147)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:90)
+	... 61 common frames omitted
+
+2021-02-19 23:41:31.217  INFO 15340 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 15340 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 23:41:31.219  INFO 15340 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 23:41:31.254  INFO 15340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 23:41:31.254  INFO 15340 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 23:41:31.820  INFO 15340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 23:41:31.907  INFO 15340 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 5 JPA repository interfaces.
+2021-02-19 23:41:32.532  INFO 15340 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 23:41:32.539  INFO 15340 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 23:41:32.539  INFO 15340 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 23:41:32.648  INFO 15340 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 23:41:32.648  INFO 15340 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1393 ms
+2021-02-19 23:41:32.801  INFO 15340 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 23:41:32.840  INFO 15340 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 23:41:32.943  INFO 15340 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 23:41:33.022  INFO 15340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 23:41:33.584  INFO 15340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 23:41:33.601  INFO 15340 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 23:41:34.222  INFO 15340 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 23:41:34.229  INFO 15340 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 23:41:34.278  INFO 15340 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 23:41:34.775  WARN 15340 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commentServiceImpl': Unsatisfied dependency expressed through field 'commentRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentRepository' defined in com.louisblogs.dao.CommentRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort)! Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type SIMPLE_PROPERTY for property parentComment unbound.
+2021-02-19 23:41:34.776  INFO 15340 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 23:41:34.779  INFO 15340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-02-19 23:41:34.781  INFO 15340 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-02-19 23:41:34.783  INFO 15340 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-19 23:41:34.791  INFO 15340 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-19 23:41:34.949 ERROR 15340 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commentServiceImpl': Unsatisfied dependency expressed through field 'commentRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentRepository' defined in com.louisblogs.dao.CommentRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort)! Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type SIMPLE_PROPERTY for property parentComment unbound.
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1415)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:144)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300)
+	at com.louisblogs.BlogApplication.main(BlogApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentRepository' defined in com.louisblogs.dao.CommentRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort)! Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type SIMPLE_PROPERTY for property parentComment unbound.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort)! Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type SIMPLE_PROPERTY for property parentComment unbound.
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:107)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:218)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:81)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:100)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:93)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Iterator.forEachRemaining(Iterator.java:116)
+	at java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1049)
+	at java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:708)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:499)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:95)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:85)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:85)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:303)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$6(RepositoryFactoryBeanSupport.java:326)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalStateException: Method public abstract java.util.List com.louisblogs.dao.CommentRepository.findByBlogIdAndParentComment(java.lang.Long,org.springframework.data.domain.Sort) expects at least 2 arguments but only found 1. This leaves an operator of type SIMPLE_PROPERTY for property parentComment unbound.
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.throwExceptionOnArgumentMismatch(PartTreeJpaQuery.java:161)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.validate(PartTreeJpaQuery.java:147)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:90)
+	... 61 common frames omitted
+
+2021-02-19 23:42:02.225  INFO 15324 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 15324 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 23:42:02.226  INFO 15324 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 23:42:02.261  INFO 15324 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 23:42:02.262  INFO 15324 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 23:42:02.861  INFO 15324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 23:42:02.951  INFO 15324 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+2021-02-19 23:42:03.625  INFO 15324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 23:42:03.633  INFO 15324 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 23:42:03.634  INFO 15324 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 23:42:03.752  INFO 15324 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 23:42:03.752  INFO 15324 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1490 ms
+2021-02-19 23:42:03.922  INFO 15324 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 23:42:03.962  INFO 15324 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 23:42:04.074  INFO 15324 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 23:42:04.169  INFO 15324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 23:42:04.760  INFO 15324 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 23:42:04.778  INFO 15324 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 23:42:05.429  INFO 15324 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 23:42:05.437  INFO 15324 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 23:42:05.489  INFO 15324 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 23:42:06.393  WARN 15324 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-19 23:42:06.560  INFO 15324 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-19 23:42:06.767  INFO 15324 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-19 23:42:07.355  INFO 15324 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-19 23:42:07.364  INFO 15324 --- [restartedMain] com.louisblogs.BlogApplication           : Started BlogApplication in 5.604 seconds (JVM running for 6.864)
+2021-02-19 23:42:18.693  INFO 15324 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-19 23:42:18.693  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-19 23:42:18.694  INFO 15324 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-02-19 23:42:18.736  INFO 15324 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-02-19 23:42:18.854  WARN 15324 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-19 23:42:18.867  WARN 15324 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-19 23:42:18.877  INFO 15324 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Result : index
+2021-02-19 23:42:23.426  INFO 15324 --- [http-nio-8080-exec-4] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/blog/1', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.blog', args=[1, {}]}
+2021-02-19 23:42:23.502  INFO 15324 --- [http-nio-8080-exec-4] com.louisblogs.aspect.LogAspect          : Result : blog
+2021-02-19 23:42:24.132  INFO 15324 --- [http-nio-8080-exec-6] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments/1', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.comments', args=[1, {}]}
+2021-02-19 23:42:24.170  INFO 15324 --- [http-nio-8080-exec-6] com.louisblogs.aspect.LogAspect          : Result : blog :: commentList
+2021-02-19 23:42:24.183 ERROR 15324 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "blog::[commentList]": An error happened during template parsing (template: "class path resource [templates/blog.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "comment.adminComment" (template: "blog" - line 533, col 99)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	... 48 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "comment.adminComment" (template: "blog" - line 533, col 99)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:292)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	... 50 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'adminComment' cannot be found on object of type 'com.louisblogs.po.Comment' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	... 78 common frames omitted
+
+2021-02-19 23:42:24.185 ERROR 15324 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/blog.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'adminComment' cannot be found on object of type 'com.louisblogs.po.Comment' - maybe not public or not valid?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:217)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:406)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:92)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:112)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:337)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:265)
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:166)
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138)
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:125)
+	at org.thymeleaf.standard.processor.StandardIfTagProcessor.isVisible(StandardIfTagProcessor.java:59)
+	at org.thymeleaf.standard.processor.AbstractStandardConditionalVisibilityTagProcessor.doProcess(AbstractStandardConditionalVisibilityTagProcessor.java:61)
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
+	at org.thymeleaf.engine.Model.process(Model.java:282)
+	at org.thymeleaf.engine.Model.process(Model.java:290)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322)
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220)
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164)
+	at org.attoparser.select.BlockSelectorMarkupHandler.handleCloseElementEnd(BlockSelectorMarkupHandler.java:1178)
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169)
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412)
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473)
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201)
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301)
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1393)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1138)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1077)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:962)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-02-19 23:58:48.431  INFO 5264 --- [restartedMain] com.louisblogs.BlogApplication           : Starting BlogApplication using Java 1.8.0_131 on LAPTOP-G1HA1NOM with PID 5264 (C:\Users\卢琦\Desktop\blog\target\classes started by 卢琦 in C:\Users\卢琦\Desktop\blog)
+2021-02-19 23:58:48.434  INFO 5264 --- [restartedMain] com.louisblogs.BlogApplication           : The following profiles are active: dev
+2021-02-19 23:58:48.470  INFO 5264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-02-19 23:58:48.471  INFO 5264 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-02-19 23:58:49.047  INFO 5264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-02-19 23:58:49.138  INFO 5264 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 5 JPA repository interfaces.
+2021-02-19 23:58:49.779  INFO 5264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-19 23:58:49.788  INFO 5264 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-19 23:58:49.789  INFO 5264 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-02-19 23:58:49.897  INFO 5264 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-19 23:58:49.898  INFO 5264 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1427 ms
+2021-02-19 23:58:50.058  INFO 5264 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-02-19 23:58:50.100  INFO 5264 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.27.Final
+2021-02-19 23:58:50.202  INFO 5264 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-02-19 23:58:50.290  INFO 5264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-02-19 23:58:50.935  INFO 5264 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-02-19 23:58:50.952  INFO 5264 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-02-19 23:58:51.716  INFO 5264 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-02-19 23:58:51.725  INFO 5264 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-02-19 23:58:51.781  INFO 5264 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-02-19 23:58:52.611  WARN 5264 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-02-19 23:58:52.764  INFO 5264 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-19 23:58:52.856  INFO 5264 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-02-19 23:58:53.384  INFO 5264 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-19 23:58:53.393  INFO 5264 --- [restartedMain] com.louisblogs.BlogApplication           : Started BlogApplication in 5.453 seconds (JVM running for 6.746)
+2021-02-19 23:58:58.934  INFO 5264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-02-19 23:58:58.935  INFO 5264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-02-19 23:58:58.935  INFO 5264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-02-19 23:58:58.966  INFO 5264 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-02-19 23:58:59.047  WARN 5264 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-19 23:58:59.057  WARN 5264 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-02-19 23:58:59.063  INFO 5264 --- [http-nio-8080-exec-1] com.louisblogs.aspect.LogAspect          : Result : index
+2021-02-19 23:59:00.268  INFO 5264 --- [http-nio-8080-exec-7] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/blog/1', ip='127.0.0.1', classMethod='com.louisblogs.web.IndexController.blog', args=[1, {}]}
+2021-02-19 23:59:00.345  INFO 5264 --- [http-nio-8080-exec-7] com.louisblogs.aspect.LogAspect          : Result : blog
+2021-02-19 23:59:00.817  INFO 5264 --- [http-nio-8080-exec-3] com.louisblogs.aspect.LogAspect          : Request : {url='http://127.0.0.1:8080/comments/1', ip='127.0.0.1', classMethod='com.louisblogs.web.CommentController.comments', args=[1, {}]}
+2021-02-19 23:59:00.849  INFO 5264 --- [http-nio-8080-exec-3] com.louisblogs.aspect.LogAspect          : Result : blog :: commentList

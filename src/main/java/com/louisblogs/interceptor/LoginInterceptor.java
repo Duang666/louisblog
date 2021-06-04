@@ -1,0 +1,25 @@
+package com.louisblogs.interceptor;
+/*
+ * Created by luqi on 2021/2/13 11:18
+ * 登录拦截器，防止未登录状态下直接输入地址访问后台
+ */
+
+import org.springframework.web.servlet.HandlerInterceptor;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+public class LoginInterceptor implements HandlerInterceptor {
+    @Override
+    public boolean preHandle(HttpServletRequest request,
+                             HttpServletResponse response,
+                             Object handler) throws Exception {
+        //判断session中是否有user,如果为空则是未登录状态
+        if(request.getSession().getAttribute("user")==null){
+            response.sendRedirect("/admin");                //重定向到admin首页
+            return false;
+        }
+        return true;
+    }
+}
